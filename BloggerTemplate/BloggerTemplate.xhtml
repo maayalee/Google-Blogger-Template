@@ -311,11 +311,14 @@
           <div class='widget-content popular-posts'>
             <b:loop values='data:posts' var='post'>
               <div class='alert alert-success mt-4' role='alert'>
-                <h6><span class='line-green'>發燒文章 #1</span><span class='text-muted'>&#12539;瀏覽次數&#65306;10.2 萬次&#12539;發布日期&#65306;2019 年 8 月 12 日</span></h6>
+		<h6><span class='line-green'>Fever articles #1</span><span class='text-muted'>&#12539;</span></h6>
+<!--
+                <h6><span class='line-green'>Fever articles #1</span><span class='text-muted'>&#12539;Views&#65306;10.2 萬次&#12539;Release date期&#65306;2019 年 8 月 12 日</span></h6>
+-->
                 <header><h1 class='alert-heading fst-italic mb-3'><data:post.title/></h1></header>
                 <div style='text-align:justify;'><data:post.snippet/></div>
                 <div class='d-flex justify-content-end'>
-                  <a class='btn btn-outline-success line-green stretched-link mt-3' expr:href='data:post.href'>閱讀發燒文章</a>
+                  <a class='btn btn-outline-success line-green stretched-link mt-3' expr:href='data:post.href'>Read article</a>
                 </div>
               </div>
             </b:loop>
@@ -857,9 +860,9 @@
         <div class='position-sticky' style='top:5.5rem;'>
           <div class='card p-4 mb-4'>
             <h4 class='fw-bold'>About</h4>
-            <p class='mb-2'>本網站成立於 2019 年 7 月 17 日&#12290;累計有 146 篇文章&#65281;分享筆者的生活經歷與特殊經驗&#65281;</p>
+            <p class='mb-2'>Thor's Engineering Wiki</p>
             <b:section id='ViewsCount'>
-              <b:widget id='Stats0' locked='false' title='總網頁瀏覽量' type='Stats' version='1'>
+              <b:widget id='Stats0' locked='false' title='Total page view' type='Stats' version='1'>
                 <b:widget-settings>
                   <b:widget-setting name='showGraphicalCounter'>false</b:widget-setting>
                   <b:widget-setting name='showAnimatedCounter'>false</b:widget-setting>
