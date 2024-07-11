@@ -5,7 +5,7 @@
 <head>
   <meta charset='UTF-8'/>
   <meta content='Ricky Chuang' name='author'/>
-  <meta content='Copyright © 2022 Thor\'s Engineering' name='copyright'/>
+  <meta content='Copyright © 2022 Thor&apos;s Engineering' name='copyright'/>
   <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
   <b:include data='blog' name='all-head-content'/>
   
@@ -213,14 +213,14 @@
     <div class='container'>
       <nav class='navbar navbar-expand-xl navbar-dark'>
         <div class='container-fluid'>
-          <a class='navbar-brand fs-4 fw-bold text-white' href='/'>Thor\'s Engineering</a>
+          <a class='navbar-brand fs-4 fw-bold text-white' href='/'>Thor&#39;s Engineering</a>
           <button aria-controls='hamburger' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler' data-bs-target='#hamburger' data-bs-toggle='collapse' type='button'>
             <span class='navbar-toggler-icon'/>
           </button>
           <div class='collapse navbar-collapse' id='hamburger'>
             <div class='navbar-nav flex-row'>
               <a class='nav-link me-2' href='/p/support-us.html' style='color:orange;' target='_blank'>Support Us</a>
-              <a class='nav-link me-2 active' href='/p/all-posts.html' target='_blank'>Thor\'s Engineering</a>
+              <a class='nav-link me-2 active' href='/p/all-posts.html' target='_blank'>All articles</a>
               <a class='nav-link me-2 active' href='https://linktr.ee/5j_54d93' target='_blank'>Social links</a>
               <div class='navbar-nav nav-item dropdown'>
                 <a aria-expanded='false' class='nav-link dropdown active' data-bs-toggle='dropdown' href='#' id='navbarDropdown' role='button' style='display:block; border-radius:13%;'>
@@ -326,31 +326,30 @@
     <div class='row mt-4'>
       <div class='col-lg-8'>
         <b:section id='BlogPost0'>
-          <b:widget id='Blog0' locked='false' title='網誌文章' type='Blog' version='1'>
+          <b:widget id='Blog0' locked='false' title='블로그 게시물' type='Blog' version='1'>
             <b:widget-settings>
+              <b:widget-setting name='showDateHeader'>false</b:widget-setting>
               <b:widget-setting name='commentLabel'>Comments</b:widget-setting>
+              <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='showShareButtons'>true</b:widget-setting>
               <b:widget-setting name='authorLabel'>Posted by</b:widget-setting>
-              <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
+              <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+              <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='postLocationLabel'>Location:</b:widget-setting>
+              <b:widget-setting name='showAuthor'>false</b:widget-setting>
+              <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+              <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='reactionsLabel'/>
               <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
               <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+              <b:widget-setting name='showLabels'>true</b:widget-setting>
               <b:widget-setting name='showLocation'>false</b:widget-setting>
+              <b:widget-setting name='postLabelsLabel'>Topic&#65306;</b:widget-setting>
               <b:widget-setting name='showTimestamp'>true</b:widget-setting>
               <b:widget-setting name='postsPerAd'>1</b:widget-setting>
-              <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-              <b:widget-setting name='showDateHeader'>false</b:widget-setting>
-              <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
-              <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-              <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
-              <b:widget-setting name='postLocationLabel'>Location:</b:widget-setting>
-              <b:widget-setting name='showAuthor'>false</b:widget-setting>
-              <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
-              <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-              <b:widget-setting name='showLabels'>true</b:widget-setting>
-              <b:widget-setting name='postLabelsLabel'>Topic&#65306;</b:widget-setting>
               <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+              <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='showInlineAds'>false</b:widget-setting>
               <b:widget-setting name='showReactions'>false</b:widget-setting>
             </b:widget-settings>
@@ -368,7 +367,7 @@
                       <b:case value='index'/>
                         <b:if cond='data:blog.searchQuery'>
                           <b:if cond='data:posts.length == 0'>
-			    there aren't any post about&#12300;<data:blog.searchQuery/>&#12301;😢
+			    there aren&#39;t any post about&#12300;<data:blog.searchQuery/>&#12301;😢
                           <b:else/>
 			    there are <data:posts.length/> posts about&#12300;<data:blog.searchQuery/>&#12301;
                           </b:if>
@@ -426,7 +425,7 @@
                 <div class='card'>
                   <div class='card-body'>
                     <b:include data='post' name='comment-form'/>
-                    <p class='text-muted text-center'>If you can't commemt, try using Chrome instead.</p>
+                    <p class='text-muted text-center'>If you can&#39;t commemt, try using Chrome instead.</p>
                   </div>
                 </div>
               </div>
@@ -820,7 +819,7 @@
                         <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'/>
                       </div>
                     </b:if>
-                    <p class='text-muted text-center'>If you can't comment, try using Chrome instead.</p>
+                    <p class='text-muted text-center'>If you can&#39;t comment, try using Chrome instead.</p>
                   </div>
                 </div>
               </div>
@@ -885,7 +884,7 @@
               </b:widget>
             </b:section>
             <b:section id='Followers'>
-              <b:widget id='Followers1' locked='false' title='' type='Followers'>
+              <b:widget id='Followers1' locked='false' title='팔로어' type='Followers'>
                 <b:widget-settings>
                   <b:widget-setting name='borderColorTransparent'>true</b:widget-setting>
                   <b:widget-setting name='useTemplateDefaultStyles'>true</b:widget-setting>
@@ -898,20 +897,20 @@
                   <b:widget-setting name='contentLinkColor'>#000000</b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main'>
-                  <b:if cond='data:title != &quot;&quot; and data:codeSnippet != &quot;&quot;'>
-                    <h2 class='title'><data:title/></h2>
-                  </b:if>
-                  <div class='widget-content'>
-                    <div expr:id='data:widget.instanceId + &quot;-wrapper&quot;'>
-                      <b:if cond='data:codeSnippet != &quot;&quot;'>
-                        <div style='margin-right:2px;'>
-                          <data:codeSnippet/>
-                        </div>
-                      </b:if>
-                    </div>
-                    <b:include name='quickedit'/>
-                  </div>
-                </b:includable>
+  <b:if cond='data:title != &quot;&quot; and data:codeSnippet != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <div expr:id='data:widget.instanceId + &quot;-wrapper&quot;'>
+      <b:if cond='data:codeSnippet != &quot;&quot;'>
+        <div style='margin-right:2px;'>
+          <data:codeSnippet/>
+        </div>
+      </b:if>
+    </div>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
               </b:widget>
             </b:section>
           </div>
@@ -922,8 +921,8 @@
   <footer class='text-muted py-3 mt-4 border-top'>
     <div class='container'>
       <p class='text-center'>
-        Copyright &#169; 2022 Thor\'s Engineering&#65372;
-        <a href='/'>首頁</a>&#65372;
+        Copyright &#169; 2022 Thor&#39;s Engineering&#65372;
+        <a href='/'>Home</a>&#65372;
         <a href='/p/support-us.html' target='_blank'>Support Us</a>&#65372;
         <a href='#PopularPosts1'>Fever articles</a>&#65372;
         <a href='https://linktr.ee/5j_54d93' target='_blank'>Social links</a>&#65372;
